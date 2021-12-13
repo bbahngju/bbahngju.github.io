@@ -53,6 +53,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
+  --bs-certificate-rgb: 255, 126, 0;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -155,8 +156,8 @@ h6, .h6 {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 abbr[title],
@@ -487,6 +488,21 @@ progress {
 
 [hidden] {
   display: none !important;
+}
+
+.tech-stack {
+  color: #000;
+  background-color: #f5ddad;
+  border-color: #f5ddad;
+  font-size: 12px;
+  width: fit-content;
+  padding: 0px 7px 0px 7px;
+  margin: 0px 5px 0px 0px;
+  border-radius: 4px;
+}
+
+.circle-icon {
+  font-size: 8px;
 }
 
 .lead {
@@ -3033,7 +3049,7 @@ textarea.form-control-lg {
 .btn-primary {
   color: #000;
   background-color: #bd5d38;
-  border-color: #bd5d38;
+  border-color: #f1835e;
 }
 .btn-primary:hover {
   color: #000;
@@ -7038,6 +7054,7 @@ textarea.form-control-lg {
 
 .flex-shrink-0 {
   flex-shrink: 0 !important;
+  margin: 7px 0px;
 }
 
 .flex-shrink-1 {
@@ -7379,7 +7396,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .mb-auto {
@@ -7770,6 +7787,11 @@ textarea.form-control-lg {
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-certificate {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-certificate-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-muted {
@@ -11297,7 +11319,7 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
+    padding-left: 14rem;
   }
 }
 h1, .h1,
@@ -11325,9 +11347,14 @@ p.lead {
 
 .subheading {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+.project-subheading {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 #sideNav {
@@ -11353,7 +11380,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 14rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -11364,7 +11391,6 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -11412,8 +11438,8 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
@@ -11429,7 +11455,7 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
