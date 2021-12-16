@@ -11429,6 +11429,25 @@ p.lead {
   background-color: #bd5d38;
 }
 
+.related-link-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.0rem;
+  margin-right: 1.5rem;
+}
+.related-link-icons .related-link-icons:last-child {
+  margin-right: 0;
+}
+.related-link-icons .related-link-icons:hover {
+  background-color: #bd5d38;
+}
+
 .dev-icons {
   font-size: 3rem;
 }
