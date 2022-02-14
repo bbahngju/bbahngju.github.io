@@ -184,7 +184,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 ol ol,
@@ -196,6 +196,7 @@ ul ol {
 
 dt {
   font-weight: 700;
+  margin-top: 1rem;
 }
 
 dd {
